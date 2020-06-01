@@ -8,7 +8,6 @@ import {
   List,
   Divider,
   Item,
-  Image as ImageSemantic,
 } from "semantic-ui-react";
 
 import styled from "styled-components";
@@ -17,8 +16,6 @@ import jelo from "./assets/jelo.jpg";
 import vc from "./assets/vc.jpeg";
 import gf from "./assets/gf.jpeg";
 import mb from "./assets/mb.png";
-import md from "./assets/md.jpg";
-import bb from "./assets/bb.png";
 
 const Image = styled.img`
   width: 12rem;
@@ -32,6 +29,8 @@ function App() {
         style={{
           height: "1500px",
           width: "1000px",
+          minWidth: "1000px",
+          overflowX: "auto",
         }}
       >
         <div className='m-4'>
@@ -432,7 +431,9 @@ function App() {
 
                   <Item.Content>
                     <Item.Header as='a'>Virtual Control</Item.Header>
-                    <Item.Meta>Full-Stack Developer</Item.Meta>
+                    <Item.Meta>
+                      Full-Stack Developer (August 2019 - Present)
+                    </Item.Meta>
                     <Item.Description>
                       <List as='ul'>
                         <List.Item as='li'>
@@ -476,7 +477,9 @@ function App() {
                   <Item.Image size='tiny' src={gf} />
 
                   <Item.Content>
-                    <Item.Header as='a'>GoFluent</Item.Header>
+                    <Item.Header as='a'>
+                      GoFluent (October 2017 - August 2019)
+                    </Item.Header>
                     <Item.Meta>Front-End Developer</Item.Meta>
                     <Item.Description>
                       <List as='ul'>
@@ -520,7 +523,9 @@ function App() {
 
                   <Item.Content>
                     <Item.Header as='a'>Metrobank</Item.Header>
-                    <Item.Meta>Front-End Developer</Item.Meta>
+                    <Item.Meta>
+                      Front-End Developer (April 2017 - October 2017)
+                    </Item.Meta>
                     <Item.Description>
                       <List as='ul'>
                         <List.Item as='li'>
@@ -557,51 +562,65 @@ function App() {
           </Segment>
         </div>
 
-        <div className='m-4'>
+        <div className='mx-4 mb-4'>
           <Segment>
             <div className='flex'>
               <div className='w-1/2'>
                 <Label as='a' color='orange' size='tiny' tag>
                   <div className='text-xs'>Writing Articles</div>
                 </Label>
-                <div className='flex justify-between'>
-                  <ImageSemantic src={md} size='small' />
 
-                  <div className='text-justify text-sm pr-4'>
-                    I have a passion for writing about tech! <br />
-                    Several if not most of my articles are regarding current
-                    best practices of the front-end industry. <br />I try to
-                    have it made in a friendly beginner-friendly so that I could
-                    give back to the software community and help my fellow
-                    software engineers out there.
-                  </div>
+                <div className='text-lg font-semibold my-2'>
+                  I have a passion for writing about tech!
                 </div>
+                <List as='ul'>
+                  <List.Item as='li'>
+                    <div>
+                      You can read all about my articles in my medium profile.
+                    </div>
+                  </List.Item>
+                  <List.Item as='li'>
+                    <div>https://medium.com/@jelorivera08</div>
+                  </List.Item>
+
+                  <List.Item as='li'>
+                    <div>
+                      This is my way of giving back to the community. That is
+                      why I keep my content advanced yet beginner friendly.
+                    </div>
+                  </List.Item>
+                </List>
               </div>
               <Divider vertical />
 
-              <div className='w-1/2'>
+              <div className='w-1/2 ml-8'>
                 <Label as='a' color='orange' size='tiny' tag>
                   <div className='text-xs'>Personal Projects</div>
                 </Label>
 
-                <div className='flex justify-between'>
-                  <ImageSemantic
-                    style={{ height: "80px" }}
-                    className='ml-12 mt-2'
-                    src={bb}
-                    size='tiny'
-                  />
-
-                  <div className='text-justify text-sm ml-2	pr-4'>
-                    I do a lot of side projects for my part time!
-                    <br />
-                    In my projects, I incorporate a minimalist feel on my
-                    client's brand. (https://babe-formula.com) <br /> Never
-                    forget about web app performance using state-of-the-art
-                    technologies for both front and back end. All deployed and
-                    served in the Cloud using GOOGLE CLOUD PLATFORM and MongoDB.
-                  </div>
+                <div className='text-lg font-semibold my-2'>
+                  I do a lot of side projects for my part time!
                 </div>
+                <List as='ul'>
+                  <List.Item as='li'>
+                    <div>
+                      In my projects, I incorporate a minimalist feel on my
+                      client's brand.
+                    </div>
+                  </List.Item>
+                  <List.Item as='li'>
+                    <div>https://babe-formula.com</div>
+                  </List.Item>
+
+                  <List.Item as='li'>
+                    <div>
+                      I never forget about web app performance using
+                      state-of-the-art technologies for both front and back end.
+                      All deployed and served in the Cloud! (Google Cloud
+                      Platform and MongoDB Cloud)
+                    </div>
+                  </List.Item>
+                </List>
               </div>
             </div>
           </Segment>
