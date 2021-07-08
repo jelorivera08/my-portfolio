@@ -6,7 +6,6 @@ import {
   Segment,
   Label,
   List,
-  Divider,
   Item,
 } from "semantic-ui-react";
 
@@ -17,6 +16,7 @@ import sg from "./assets/sg.jpg";
 import gf from "./assets/gf.jpeg";
 import mb from "./assets/mb.png";
 import ust from "./assets/ust.jpg";
+import vc from './assets/vc.jpeg'
 
 const Image = styled.img`
   width: 12rem;
@@ -454,7 +454,7 @@ function App() {
             <div className="mt-4">
               <Item.Group>
                 <Label as="a" color="blue" ribbon>
-                  <div className="text-xs">Working experience 3</div>
+                  <div className="text-xs">Working experience 4</div>
                 </Label>
                 <Item>
                   <Item.Image size="tiny" src={sg} />
@@ -462,29 +462,27 @@ function App() {
                   <Item.Content>
                     <Item.Header as="a">Scentre Group </Item.Header>
                     <Item.Meta>
-                      Full-Stack Developer (August 2019 - Present)
+                      Full-Stack Developer (June 2020 - Present)
                     </Item.Meta>
                     <Item.Description>
                       <List as="ul">
                         <List.Item as="li">
-                          Helped in Developing a Progressive Web App for clients
-                          using React plus current JavaScript Best Practices.
+                          Developed a Progressive Web App that enables our retailers to reach their market with ease and personalization.
                         </List.Item>
                         <List.Item as="li">
-                          Made sure every commit and Pull Request is of quality
-                          clean code standard.
+                          Content model structuring, data structure design and architecture.
                         </List.Item>
                         <List.Item as="li">
-                          Created APIs, Google Cloud Functions, and other server related services using Javascript
+                          Integrated Contentful API to our NextJS front end using modern CMS.
                         </List.Item>
                         <List.Item as="li">
-                          Unit tests are of paramount importance in our team
-                          culture.
+                          Created multiple Google Cloud Functions that helps us enable our users with data synchronization, security and exhaustive CRON jobs.
                         </List.Item>
                       </List>
                     </Item.Description>
                     <Item.Extra>
-                      <Label>React</Label>
+                    <Label>Nextjs</Label>
+                    <Label>React</Label>
                       <Label>Express</Label>
                       <Label>Redux</Label>
                       <Label>Google Storage</Label>
@@ -498,6 +496,52 @@ function App() {
                     </Item.Extra>
                   </Item.Content>
                 </Item>
+
+
+                <Label as="a" color="blue" ribbon>
+                  <div className="text-xs">Working experience 3</div>
+                </Label>
+                <Item>
+                  <Item.Image size="tiny" src={vc} />
+
+                  <Item.Content>
+                    <Item.Header as="a">Virtual Control</Item.Header>
+                    <Item.Meta>
+                      Front-End Developer (August 2019 - June 2020)
+                    </Item.Meta>
+                    <Item.Description>
+                      <List as="ul">
+                        <List.Item as="li">
+                          Developed and Integrated Single Page Applications and integrated it with Machine Learning APIs for different cargo clients.
+                        </List.Item>
+                        <List.Item as="li">
+                          Brainstorm helpful features and deliver them for our clients in a fast paced start up environment.
+                        </List.Item>
+                        <List.Item as="li">
+                          Integrated Machine Learning APIs from our Kiev AI team into the SPA using GraphQL, etc
+                        </List.Item>
+                        <List.Item as="li">
+                          Unit test-centric development focusing on both integration and functionality tests.
+                        </List.Item>
+                      </List>
+                    </Item.Description>
+                    <Item.Extra>
+                      <Label>React</Label>
+                      <Label>Express</Label>
+                      <Label>Redux</Label>
+                      <Label>AWS</Label>
+                      <Label>Jest</Label>
+                      <Label>Webpack</Label>
+                      <Label>Babel</Label>
+                      <Label>GraphQL</Label>
+                      <Label>JavaScript</Label>
+                      <Label>SPA</Label>
+                      <Label>PWA</Label>
+                    </Item.Extra>
+                  </Item.Content>
+                </Item>
+
+                
 
                 <Label as="a" color="blue" ribbon>
                   <div className="text-xs">Working experience 2</div>
@@ -620,29 +664,7 @@ function App() {
                   </List.Item>
                 </List>
               </div>
-              <Divider vertical />
 
-              <div className="w-1/2 ml-8">
-                <Label as="a" color="orange" size="tiny" tag>
-                  <div className="text-xs">Personal Projects</div>
-                </Label>
-
-                <div className="text-lg font-semibold my-2">
-                  I do a lot of side projects for my part time!
-                </div>
-                <List as="ul">
-                  <List.Item as="li">
-                    <div className="text-blue-500">
-                      http://ariankitektura.com
-                    </div>
-                  </List.Item>
-                  <List.Item as="li">
-                    <div className="text-blue-500">
-                      https://babe-formula.com
-                    </div>
-                  </List.Item>
-                </List>
-              </div>
             </div>
           </Segment>
         </div>
