@@ -13,9 +13,10 @@ import {
 import styled from "styled-components";
 
 import jelo from "./assets/jelo.jpg";
-import vc from "./assets/vc.jpeg";
+import sg from "./assets/sg.jpg";
 import gf from "./assets/gf.jpeg";
 import mb from "./assets/mb.png";
+import ust from "./assets/ust.jpg";
 
 const Image = styled.img`
   width: 12rem;
@@ -24,220 +25,249 @@ const Image = styled.img`
 
 function App() {
   return (
-    <div className='flex justify-center my-16'>
+    <div className="flex justify-center my-16">
       <Card
         style={{
-          height: "1500px",
           width: "1000px",
           minWidth: "1000px",
-          overflowX: "auto",
         }}
       >
-        <div className='m-4'>
-          <Segment className='text-xs  flex justify-between'>
+        <div className="m-4">
+          <Segment className="text-xs  flex justify-between">
             <div>
-              <div className='text-3xl font-bold'>Jelo Rivera</div>
-              <div className='text-xl mt-2 font-semibold'>
+              <div className="text-3xl font-bold">Jelo Rivera</div>
+              <div className="text-xl mt-2 font-semibold">
                 Full-Stack Web Developer
               </div>
-              <div className='flex mt-4'>
-                <Icon name='git square'></Icon>
+              <div className="flex mt-4">
+                <Icon name="git square"></Icon>
 
                 <div>https://github.com/jelorivera08</div>
               </div>
 
-              <div className='flex mt-2'>
-                <Icon name='medium'></Icon>
+              <div className="flex mt-2">
+                <Icon name="medium"></Icon>
 
                 <div>https://medium.com/@jelorivera08</div>
               </div>
 
-              <div className='flex mt-2'>
-                <Icon name='linkedin'></Icon>
+              <div className="flex mt-2">
+                <Icon name="linkedin"></Icon>
 
                 <div>https://www.linkedin.com/in/jerald-rivera-2055b8130</div>
               </div>
 
-              <div className='flex mt-2'>
-                <Icon name='mail'></Icon>
+              <div className="flex mt-2">
+                <Icon name="mail"></Icon>
 
                 <div>jelorivera08@gmail.com</div>
               </div>
 
-              <div className='flex mt-2'>
-                <Icon name='mobile'></Icon>
+              <div className="flex mt-2">
+                <Icon name="mobile"></Icon>
 
                 <div>+63 919 001 4729</div>
               </div>
             </div>
 
             <div>
-              <Image src={jelo} alt='jelo' />
+              <Image src={jelo} alt="jelo" />
             </div>
           </Segment>
         </div>
-        <div className='mx-4 flex justify-between'>
-          <div className=' w-1/2'>
-            <Segment className='text-xs'>
-              <Label color='teal'>
-                <div className='text-xl font-bold'>
+
+        <div className="m-4">
+          <Segment className="text-xs">
+            <Label color="teal">
+              <div className="text-xl font-bold">Academic achievement</div>
+            </Label>
+            <div className="flex">
+              <div className="p-4">
+                <img
+                  style={{
+                    width: "5rem",
+                  }}
+                  src={ust}
+                  alt="ust"
+                />
+              </div>
+              <div className="m-4">
+                <div className="text-2xl font-bold">
+                  University of Santo Tomas
+                </div>
+                <div className="text-gray-700  text-sm ">
+                  June 2011 - June 2016
+                </div>
+                <div className="font-semibold">
+                  Bachelor of Science Major in Electronics and Communications
+                  Engineering
+                </div>
+              </div>
+            </div>
+          </Segment>
+        </div>
+        <div className="mx-4 flex justify-between">
+          <div className=" w-1/2">
+            <Segment className="text-xs">
+              <Label color="teal">
+                <div className="text-xl font-bold">
                   Multidisciplinary Developer
                 </div>
               </Label>
               <List divided selection>
                 <List.Item>
-                  <div className='flex justify-between'>
-                    <div className='w-3/12'>{null}</div>
-                    <div className='w-2/12 text-sm flex justify-center'>
+                  <div className="flex justify-between">
+                    <div className="w-3/12">{null}</div>
+                    <div className="w-2/12 text-sm flex justify-center">
                       Beginner
                     </div>
-                    <div className='w-2/12 text-sm flex justify-center'>
+                    <div className="w-2/12 text-sm flex justify-center">
                       Elementary
                     </div>
-                    <div className='w-2/12 text-sm mx-4 flex justify-center'>
+                    <div className="w-2/12 text-sm mx-4 flex justify-center">
                       Intermediate
                     </div>
-                    <div className='w-2/12 text-sm flex justify-center'>
+                    <div className="w-2/12 text-sm flex justify-center">
                       Advanced
                     </div>
-                    <div className='w-2/12 text-sm flex justify-center'>
+                    <div className="w-2/12 text-sm flex justify-center">
                       Expert
                     </div>
                   </div>
                 </List.Item>
                 <List.Item>
-                  <div className='flex justify-around'>
-                    <div className='w-3/12'>
+                  <div className="flex justify-around">
+                    <div className="w-3/12">
                       <Label horizontal>JavaScript</Label>
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12  mx-4  text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12  mx-4  text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
                   </div>
                 </List.Item>
                 <List.Item>
-                  <div className='flex justify-around'>
-                    <div className='w-3/12'>
+                  <div className="flex justify-around">
+                    <div className="w-3/12">
                       <Label horizontal>React</Label>
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12  mx-4  text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12  mx-4  text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
                   </div>
                 </List.Item>
 
                 <List.Item>
-                  <div className='flex justify-around'>
-                    <div className='w-3/12'>
+                  <div className="flex justify-around">
+                    <div className="w-3/12">
                       <Label horizontal>HTML</Label>
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12  mx-4  text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12  mx-4  text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
+                    <div className="w-2/12 text-xs flex justify-center">
                       {null}
                     </div>
                   </div>
                 </List.Item>
 
                 <List.Item>
-                  <div className='flex justify-around'>
-                    <div className='w-3/12'>
+                  <div className="flex justify-around">
+                    <div className="w-3/12">
                       <Label horizontal>CSS</Label>
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12  mx-4  text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12  mx-4  text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
+                    <div className="w-2/12 text-xs flex justify-center">
                       {null}
                     </div>
                   </div>
                 </List.Item>
 
                 <List.Item>
-                  <div className='flex justify-around'>
-                    <div className='w-3/12'>
+                  <div className="flex justify-around">
+                    <div className="w-3/12">
                       <Label horizontal>Node.js</Label>
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12  mx-4  text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12  mx-4  text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
+                    <div className="w-2/12 text-xs flex justify-center">
                       {null}
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
+                    <div className="w-2/12 text-xs flex justify-center">
                       {null}
                     </div>
                   </div>
                 </List.Item>
                 <List.Item>
-                  <div className='flex justify-around'>
-                    <div className='w-3/12'>
+                  <div className="flex justify-around">
+                    <div className="w-3/12">
                       <Label horizontal>
-                        <div className='text-xs'> SPA & PWA</div>
+                        <div className="text-xs"> SPA & PWA</div>
                       </Label>
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12  mx-4  text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12  mx-4  text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
+                    <div className="w-2/12 text-xs flex justify-center">
                       {null}
                     </div>
                   </div>
@@ -246,166 +276,166 @@ function App() {
             </Segment>
           </div>
 
-          <div className='ml-4 w-1/2'>
-            <Segment className='text-xs'>
-              <Label color='teal'>
-                <div className='text-xl font-bold'>Web Dev Software</div>
+          <div className="ml-4 w-1/2">
+            <Segment className="text-xs">
+              <Label color="teal">
+                <div className="text-xl font-bold">Web Dev Software</div>
               </Label>
               <List divided selection>
                 <List.Item>
-                  <div className='flex justify-between'>
-                    <div className='w-3/12'>{null}</div>
-                    <div className='w-2/12 text-sm flex justify-center'>
+                  <div className="flex justify-between">
+                    <div className="w-3/12">{null}</div>
+                    <div className="w-2/12 text-sm flex justify-center">
                       Beginner
                     </div>
-                    <div className='w-2/12 text-sm flex justify-center'>
+                    <div className="w-2/12 text-sm flex justify-center">
                       Elementary
                     </div>
-                    <div className='w-2/12 text-sm mx-4 flex justify-center'>
+                    <div className="w-2/12 text-sm mx-4 flex justify-center">
                       Intermediate
                     </div>
-                    <div className='w-2/12 text-sm flex justify-center'>
+                    <div className="w-2/12 text-sm flex justify-center">
                       Advanced
                     </div>
-                    <div className='w-2/12 text-sm flex justify-center'>
+                    <div className="w-2/12 text-sm flex justify-center">
                       Expert
                     </div>
                   </div>
                 </List.Item>
                 <List.Item>
-                  <div className='flex justify-around'>
-                    <div className='w-3/12'>
+                  <div className="flex justify-around">
+                    <div className="w-3/12">
                       <Label horizontal>GraphQL</Label>
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12  mx-4  text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12  mx-4  text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
+                    <div className="w-2/12 text-xs flex justify-center">
                       {null}
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
+                    <div className="w-2/12 text-xs flex justify-center">
                       {null}
                     </div>
                   </div>
                 </List.Item>
                 <List.Item>
-                  <div className='flex justify-around'>
-                    <div className='w-3/12'>
+                  <div className="flex justify-around">
+                    <div className="w-3/12">
                       <Label horizontal>MongoDB</Label>
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12  mx-4  text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12  mx-4  text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
+                    <div className="w-2/12 text-xs flex justify-center">
                       {null}
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
+                    <div className="w-2/12 text-xs flex justify-center">
                       {null}
                     </div>
                   </div>
                 </List.Item>
 
                 <List.Item>
-                  <div className='flex justify-around'>
-                    <div className='w-3/12'>
+                  <div className="flex justify-around">
+                    <div className="w-3/12">
                       <Label horizontal>Express</Label>
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12  mx-4  text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12  mx-4  text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
+                    <div className="w-2/12 text-xs flex justify-center">
                       {null}
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
+                    <div className="w-2/12 text-xs flex justify-center">
                       {null}
                     </div>
                   </div>
                 </List.Item>
 
                 <List.Item>
-                  <div className='flex justify-around'>
-                    <div className='w-3/12'>
+                  <div className="flex justify-around">
+                    <div className="w-3/12">
                       <Label horizontal>Relay</Label>
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12  mx-4  text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12  mx-4  text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
+                    <div className="w-2/12 text-xs flex justify-center">
                       {null}
                     </div>
                   </div>
                 </List.Item>
 
                 <List.Item>
-                  <div className='flex justify-around'>
-                    <div className='w-3/12'>
+                  <div className="flex justify-around">
+                    <div className="w-3/12">
                       <Label horizontal>Redux</Label>
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12  mx-4  text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12  mx-4  text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
+                    <div className="w-2/12 text-xs flex justify-center">
                       {null}
                     </div>
                   </div>
                 </List.Item>
 
                 <List.Item>
-                  <div className='flex justify-around'>
-                    <div className='w-3/12'>
+                  <div className="flex justify-around">
+                    <div className="w-3/12">
                       <Label horizontal>
-                        <div className='text-xs'> Google Cloud</div>
+                        <div className="text-xs"> Google Cloud</div>
                       </Label>
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12  mx-4  text-xs flex justify-center'>
-                      <Icon name='star' />
+                    <div className="w-2/12  mx-4  text-xs flex justify-center">
+                      <Icon name="star" />
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
+                    <div className="w-2/12 text-xs flex justify-center">
                       {null}
                     </div>
-                    <div className='w-2/12 text-xs flex justify-center'>
+                    <div className="w-2/12 text-xs flex justify-center">
                       {null}
                     </div>
                   </div>
@@ -415,40 +445,39 @@ function App() {
           </div>
         </div>
 
-        <div className='m-4'>
-          <Segment className='text-xs'>
-            <Label color='teal'>
-              <div className='text-xl font-bold'>Experience</div>
+        <div className="m-4">
+          <Segment className="text-xs">
+            <Label color="teal">
+              <div className="text-xl font-bold">Experience</div>
             </Label>
 
-            <div className='mt-4'>
+            <div className="mt-4">
               <Item.Group>
-                <Label as='a' color='blue' ribbon>
-                  <div className='text-xs'>Working experience 3</div>
+                <Label as="a" color="blue" ribbon>
+                  <div className="text-xs">Working experience 3</div>
                 </Label>
                 <Item>
-                  <Item.Image size='tiny' src={vc} />
+                  <Item.Image size="tiny" src={sg} />
 
                   <Item.Content>
-                    <Item.Header as='a'>Virtual Control</Item.Header>
+                    <Item.Header as="a">Scentre Group </Item.Header>
                     <Item.Meta>
                       Full-Stack Developer (August 2019 - Present)
                     </Item.Meta>
                     <Item.Description>
-                      <List as='ul'>
-                        <List.Item as='li'>
+                      <List as="ul">
+                        <List.Item as="li">
                           Helped in Developing a Progressive Web App for clients
                           using React plus current JavaScript Best Practices.
                         </List.Item>
-                        <List.Item as='li'>
+                        <List.Item as="li">
                           Made sure every commit and Pull Request is of quality
                           clean code standard.
                         </List.Item>
-                        <List.Item as='li'>
-                          Integrated the PWA with AI and Machine Learning from
-                          our Kiev team.
+                        <List.Item as="li">
+                          Created APIs, Google Cloud Functions, and other server related services using Javascript
                         </List.Item>
-                        <List.Item as='li'>
+                        <List.Item as="li">
                           Unit tests are of paramount importance in our team
                           culture.
                         </List.Item>
@@ -457,12 +486,12 @@ function App() {
                     <Item.Extra>
                       <Label>React</Label>
                       <Label>Express</Label>
-                      <Label>Relay</Label>
-                      <Label>MongoDB</Label>
+                      <Label>Redux</Label>
+                      <Label>Google Storage</Label>
                       <Label>Jest</Label>
                       <Label>Webpack</Label>
                       <Label>Babel</Label>
-                      <Label>GraphQL</Label>
+                      <Label>Google Cloud</Label>
                       <Label>JavaScript</Label>
                       <Label>SPA</Label>
                       <Label>PWA</Label>
@@ -470,32 +499,32 @@ function App() {
                   </Item.Content>
                 </Item>
 
-                <Label as='a' color='blue' ribbon>
-                  <div className='text-xs'>Working experience 2</div>
+                <Label as="a" color="blue" ribbon>
+                  <div className="text-xs">Working experience 2</div>
                 </Label>
                 <Item>
-                  <Item.Image size='tiny' src={gf} />
+                  <Item.Image size="tiny" src={gf} />
 
                   <Item.Content>
-                    <Item.Header as='a'>
-                      GoFluent (October 2017 - August 2019)
-                    </Item.Header>
-                    <Item.Meta>Front-End Developer</Item.Meta>
+                    <Item.Header as="a">GoFluent</Item.Header>
+                    <Item.Meta>
+                      Front-End Developer (October 2017 - August 2019)
+                    </Item.Meta>
                     <Item.Description>
-                      <List as='ul'>
-                        <List.Item as='li'>
+                      <List as="ul">
+                        <List.Item as="li">
                           Integrated a separate React SPA into the company's
                           legacy Website
                         </List.Item>
-                        <List.Item as='li'>
+                        <List.Item as="li">
                           Developed and Designed React boilerplate and created a
                           component based repository for company branding.
                         </List.Item>
-                        <List.Item as='li'>
+                        <List.Item as="li">
                           Used Iframes for video streaming and video call group
                           staging.
                         </List.Item>
-                        <List.Item as='li'>
+                        <List.Item as="li">
                           Develoepd Offline features for the company's product
                           for better user experience.
                         </List.Item>
@@ -515,28 +544,28 @@ function App() {
                   </Item.Content>
                 </Item>
 
-                <Label as='a' color='blue' ribbon>
-                  <div className='text-xs'>Working experience 1</div>
+                <Label as="a" color="blue" ribbon>
+                  <div className="text-xs">Working experience 1</div>
                 </Label>
                 <Item>
-                  <Item.Image size='tiny' src={mb} />
+                  <Item.Image size="tiny" src={mb} />
 
                   <Item.Content>
-                    <Item.Header as='a'>Metrobank</Item.Header>
+                    <Item.Header as="a">Metrobank</Item.Header>
                     <Item.Meta>
                       Front-End Developer (April 2017 - October 2017)
                     </Item.Meta>
                     <Item.Description>
-                      <List as='ul'>
-                        <List.Item as='li'>
+                      <List as="ul">
+                        <List.Item as="li">
                           Helped in refactoring vanilla JavaScript code into a
                           PWA React.
                         </List.Item>
-                        <List.Item as='li'>
+                        <List.Item as="li">
                           Created mobile-first responsive components and
                           integrated it into the company's website.
                         </List.Item>
-                        <List.Item as='li'>
+                        <List.Item as="li">
                           Used REST API services using micro-services
                           architecture and applied unit testing.
                         </List.Item>
@@ -562,28 +591,28 @@ function App() {
           </Segment>
         </div>
 
-        <div className='mx-4 mb-4'>
+        <div className="mx-4 mb-4">
           <Segment>
-            <div className='flex'>
-              <div className='w-1/2'>
-                <Label as='a' color='orange' size='tiny' tag>
-                  <div className='text-xs'>Writing Articles</div>
+            <div className="flex">
+              <div className="w-1/2">
+                <Label as="a" color="orange" size="tiny" tag>
+                  <div className="text-xs">Writing Articles</div>
                 </Label>
 
-                <div className='text-lg font-semibold my-2'>
+                <div className="text-lg font-semibold my-2">
                   I have a passion for writing about tech!
                 </div>
-                <List as='ul'>
-                  <List.Item as='li'>
+                <List as="ul">
+                  <List.Item as="li">
                     <div>
                       You can read all about my articles in my medium profile.
                     </div>
                   </List.Item>
-                  <List.Item as='li'>
+                  <List.Item as="li">
                     <div>https://medium.com/@jelorivera08</div>
                   </List.Item>
 
-                  <List.Item as='li'>
+                  <List.Item as="li">
                     <div>
                       This is my way of giving back to the community. That is
                       why I keep my content advanced yet beginner friendly.
@@ -593,31 +622,23 @@ function App() {
               </div>
               <Divider vertical />
 
-              <div className='w-1/2 ml-8'>
-                <Label as='a' color='orange' size='tiny' tag>
-                  <div className='text-xs'>Personal Projects</div>
+              <div className="w-1/2 ml-8">
+                <Label as="a" color="orange" size="tiny" tag>
+                  <div className="text-xs">Personal Projects</div>
                 </Label>
 
-                <div className='text-lg font-semibold my-2'>
+                <div className="text-lg font-semibold my-2">
                   I do a lot of side projects for my part time!
                 </div>
-                <List as='ul'>
-                  <List.Item as='li'>
-                    <div>
-                      In my projects, I incorporate a minimalist feel on my
-                      client's brand.
+                <List as="ul">
+                  <List.Item as="li">
+                    <div className="text-blue-500">
+                      http://ariankitektura.com
                     </div>
                   </List.Item>
-                  <List.Item as='li'>
-                    <div>https://babe-formula.com</div>
-                  </List.Item>
-
-                  <List.Item as='li'>
-                    <div>
-                      I never forget about web app performance using
-                      state-of-the-art technologies for both front and back end.
-                      All deployed and served in the Cloud! (Google Cloud
-                      Platform and MongoDB Cloud)
+                  <List.Item as="li">
+                    <div className="text-blue-500">
+                      https://babe-formula.com
                     </div>
                   </List.Item>
                 </List>
