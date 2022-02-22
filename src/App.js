@@ -1,22 +1,18 @@
-import React from "react";
-import "./App.css";
-import {
-  Card,
-  Icon,
-  Segment,
-  Label,
-  List,
-  Item,
-} from "semantic-ui-react";
+import React from 'react';
+import './App.css';
+import { Card, Icon, Segment, Label, List, Item } from 'semantic-ui-react';
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import jelo from "./assets/jelo.jpg";
-import sg from "./assets/sg.jpg";
-import gf from "./assets/gf.jpeg";
-import mb from "./assets/mb.png";
-import ust from "./assets/ust.jpg";
-import vc from './assets/vc.jpeg'
+import jelo from './assets/jelo.jpg';
+import sg from './assets/sg.jpg';
+import gf from './assets/gf.jpeg';
+import mb from './assets/mb.png';
+import ust from './assets/ust.jpg';
+import vc from './assets/vc.jpeg';
+import wpr from './assets/wpr.png';
+import canon from './assets/canon.png';
+import nokia from './assets/nokia.jpeg';
 
 const Image = styled.img`
   width: 12rem;
@@ -28,8 +24,8 @@ function App() {
     <div className="flex justify-center my-16">
       <Card
         style={{
-          width: "1000px",
-          minWidth: "1000px",
+          width: '1000px',
+          minWidth: '1000px',
         }}
       >
         <div className="m-4">
@@ -85,7 +81,7 @@ function App() {
               <div className="p-4">
                 <img
                   style={{
-                    width: "5rem",
+                    width: '5rem',
                   }}
                   src={ust}
                   alt="ust"
@@ -179,7 +175,6 @@ function App() {
                     </div>
                   </div>
                 </List.Item>
-
                 <List.Item>
                   <div className="flex justify-around">
                     <div className="w-3/12">
@@ -202,7 +197,6 @@ function App() {
                     </div>
                   </div>
                 </List.Item>
-
                 <List.Item>
                   <div className="flex justify-around">
                     <div className="w-3/12">
@@ -225,7 +219,6 @@ function App() {
                     </div>
                   </div>
                 </List.Item>
-
                 <List.Item>
                   <div className="flex justify-around">
                     <div className="w-3/12">
@@ -266,6 +259,30 @@ function App() {
                     </div>
                     <div className="w-2/12 text-xs flex justify-center">
                       <Icon name="star" />
+                    </div>
+                    <div className="w-2/12 text-xs flex justify-center">
+                      {null}
+                    </div>
+                  </div>
+                </List.Item>{' '}
+                <List.Item>
+                  <div className="flex justify-around">
+                    <div className="w-3/12">
+                      <Label horizontal>
+                        <div className="text-xs">CI/CD</div>
+                      </Label>
+                    </div>
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
+                    </div>
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
+                    </div>
+                    <div className="w-2/12  mx-4  text-xs flex justify-center">
+                      <Icon name="star" />
+                    </div>
+                    <div className="w-2/12 text-xs flex justify-center">
+                      {null}
                     </div>
                     <div className="w-2/12 text-xs flex justify-center">
                       {null}
@@ -440,6 +457,31 @@ function App() {
                     </div>
                   </div>
                 </List.Item>
+
+                <List.Item>
+                  <div className="flex justify-around">
+                    <div className="w-3/12">
+                      <Label horizontal>
+                        <div className="text-xs">AWS</div>
+                      </Label>
+                    </div>
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
+                    </div>
+                    <div className="w-2/12 text-xs flex justify-center">
+                      <Icon name="star" />
+                    </div>
+                    <div className="w-2/12  mx-4  text-xs flex justify-center">
+                      <Icon name="star" />
+                    </div>
+                    <div className="w-2/12 text-xs flex justify-center">
+                      {null}
+                    </div>
+                    <div className="w-2/12 text-xs flex justify-center">
+                      {null}
+                    </div>
+                  </div>
+                </List.Item>
               </List>
             </Segment>
           </div>
@@ -453,36 +495,77 @@ function App() {
 
             <div className="mt-4">
               <Item.Group>
-                <Label as="a" color="blue" ribbon>
-                  <div className="text-xs">Working experience 4</div>
-                </Label>
+                <Item>
+                  <Item.Image size="tiny" src={wpr} />
+
+                  <Item.Content>
+                    <Item.Header as="a">Whispir </Item.Header>
+                    <Item.Meta>Full-Stack Developer (2022 - present)</Item.Meta>
+                    <Item.Description>
+                      <List as="ul">
+                        <List.Item as="li">
+                          Develop, build and own parts of the new product.
+                          Overseeing development of features and testing of the
+                          micro frontend.
+                        </List.Item>
+                        <List.Item as="li">
+                          Design and create CI/CD automated pipelines using
+                          BuildKite and AWS.
+                        </List.Item>
+                        <List.Item as="li">
+                          Develop and test Infrastructure as code using AWS' CDK
+                        </List.Item>
+                        <List.Item as="li">
+                          Create microservices using AWS Lambda, DynamoDB, and
+                          S3, etc.
+                        </List.Item>
+                      </List>
+                    </Item.Description>
+                    <Item.Extra>
+                      <Label>Nextjs</Label>
+                      <Label>React</Label>
+                      <Label>Express</Label>
+                      <Label>AWS</Label>
+                      <Label>AWS CDK</Label>
+                      <Label>Jest</Label>
+                      <Label>JavaScript</Label>
+                      <Label>CI/CD</Label>
+                      <Label>Cypress</Label>
+                    </Item.Extra>
+                  </Item.Content>
+                </Item>
+
                 <Item>
                   <Item.Image size="tiny" src={sg} />
 
                   <Item.Content>
                     <Item.Header as="a">Scentre Group </Item.Header>
-                    <Item.Meta>
-                      Full-Stack Developer (June 2020 - Present)
-                    </Item.Meta>
+                    <Item.Meta>Full-Stack Developer (2020 - 2021)</Item.Meta>
                     <Item.Description>
                       <List as="ul">
                         <List.Item as="li">
-                          Developed a Progressive Web App that enables our retailers to reach their market with ease and personalization.
+                          Developed a Progressive Web App that enables our
+                          retailers to reach their market with ease and
+                          personalization.
                         </List.Item>
                         <List.Item as="li">
-                          Content model structuring, data structure design and architecture.
+                          Content model structuring, data structure design and
+                          architecture.
                         </List.Item>
                         <List.Item as="li">
-                          Integrated Contentful API to our NextJS front end using modern CMS.
+                          Integrated Contentful API to our NextJS front end
+                          using modern CMS.
                         </List.Item>
                         <List.Item as="li">
-                          Created multiple Google Cloud Functions that helps us enable our users with data synchronization, security and exhaustive CRON jobs.
+                          Created multiple Google Cloud Functions that helps us
+                          enable our users with data synchronization, security
+                          and exhaustive CRON jobs.
                         </List.Item>
                       </List>
                     </Item.Description>
                     <Item.Extra>
-                    <Label>Nextjs</Label>
-                    <Label>React</Label>
+                      <Label>Nextjs</Label>
+                      <Label>React</Label>
                       <Label>Express</Label>
                       <Label>Redux</Label>
                       <Label>Google Storage</Label>
@@ -497,31 +580,30 @@ function App() {
                   </Item.Content>
                 </Item>
 
-
-                <Label as="a" color="blue" ribbon>
-                  <div className="text-xs">Working experience 3</div>
-                </Label>
                 <Item>
                   <Item.Image size="tiny" src={vc} />
 
                   <Item.Content>
                     <Item.Header as="a">Virtual Control</Item.Header>
-                    <Item.Meta>
-                      Front-End Developer (August 2019 - June 2020)
-                    </Item.Meta>
+                    <Item.Meta>Front-End Developer (2019 - 2020)</Item.Meta>
                     <Item.Description>
                       <List as="ul">
                         <List.Item as="li">
-                          Developed and Integrated Single Page Applications and integrated it with Machine Learning APIs for different cargo clients.
+                          Developed and Integrated Single Page Applications and
+                          integrated it with Machine Learning APIs for different
+                          cargo clients.
                         </List.Item>
                         <List.Item as="li">
-                          Brainstorm helpful features and deliver them for our clients in a fast paced start up environment.
+                          Brainstorm helpful features and deliver them for our
+                          clients in a fast paced start up environment.
                         </List.Item>
                         <List.Item as="li">
-                          Integrated Machine Learning APIs from our Kiev AI team into the SPA using GraphQL, etc
+                          Integrated Machine Learning APIs from our Kiev AI team
+                          into the SPA using GraphQL, etc
                         </List.Item>
                         <List.Item as="li">
-                          Unit test-centric development focusing on both integration and functionality tests.
+                          Unit test-centric development focusing on both
+                          integration and functionality tests.
                         </List.Item>
                       </List>
                     </Item.Description>
@@ -541,19 +623,12 @@ function App() {
                   </Item.Content>
                 </Item>
 
-                
-
-                <Label as="a" color="blue" ribbon>
-                  <div className="text-xs">Working experience 2</div>
-                </Label>
                 <Item>
                   <Item.Image size="tiny" src={gf} />
 
                   <Item.Content>
                     <Item.Header as="a">GoFluent</Item.Header>
-                    <Item.Meta>
-                      Front-End Developer (October 2017 - August 2019)
-                    </Item.Meta>
+                    <Item.Meta>Front-End Developer (2018 - 2019)</Item.Meta>
                     <Item.Description>
                       <List as="ul">
                         <List.Item as="li">
@@ -588,17 +663,12 @@ function App() {
                   </Item.Content>
                 </Item>
 
-                <Label as="a" color="blue" ribbon>
-                  <div className="text-xs">Working experience 1</div>
-                </Label>
                 <Item>
                   <Item.Image size="tiny" src={mb} />
 
                   <Item.Content>
                     <Item.Header as="a">Metrobank</Item.Header>
-                    <Item.Meta>
-                      Front-End Developer (April 2017 - October 2017)
-                    </Item.Meta>
+                    <Item.Meta>Front-End Developer (2018)</Item.Meta>
                     <Item.Description>
                       <List as="ul">
                         <List.Item as="li">
@@ -607,7 +677,7 @@ function App() {
                         </List.Item>
                         <List.Item as="li">
                           Created mobile-first responsive components and
-                          integrated it into the company's website.
+                          integrated it into the Metrobank's website.
                         </List.Item>
                         <List.Item as="li">
                           Used REST API services using micro-services
@@ -630,41 +700,60 @@ function App() {
                     </Item.Extra>
                   </Item.Content>
                 </Item>
+                <Item>
+                  <Item.Image size="tiny" src={nokia} />
+                  <Item.Content>
+                    <Item.Header as="a">Nokia</Item.Header>
+                    <Item.Meta>Software Developer (2017 - 2018)</Item.Meta>
+                    <Item.Description>
+                      <List as="ul">
+                        <List.Item as="li">
+                          Delivered and developed PWAs for Nokia's internal web
+                        </List.Item>
+                        <List.Item as="li">
+                          Worked on creating and maintaining internal company
+                          tools for software development
+                        </List.Item>
+                      </List>
+                    </Item.Description>
+                    <Item.Extra>
+                      <Label>Javascript</Label>
+                      <Label>C++</Label>
+                      <Label>React</Label>
+                      <Label>Jest</Label>
+                      <Label>Webpack</Label>
+                      <Label>Babel</Label>
+                    </Item.Extra>
+                  </Item.Content>
+                </Item>
+
+                <Item>
+                  <Item.Image size="tiny" src={canon} />
+                  <Item.Content>
+                    <Item.Header as="a">Canon</Item.Header>
+                    <Item.Meta>Software Developer (2017)</Item.Meta>
+                    <Item.Description>
+                      <List as="ul">
+                        <List.Item as="li">
+                          Worked in a team that implements new software features
+                          for canon products
+                        </List.Item>
+                        <List.Item as="li">
+                          Used different basic and advanced software development
+                          concepts and techniques such as OOP
+                        </List.Item>
+                      </List>
+                    </Item.Description>
+                    <Item.Extra>
+                      <Label>C++</Label>
+                      <Label>Javascript</Label>
+                      <Label>C#</Label>
+                      <Label>OOP</Label>
+                      <Label>Firmware</Label>
+                    </Item.Extra>
+                  </Item.Content>
+                </Item>
               </Item.Group>
-            </div>
-          </Segment>
-        </div>
-
-        <div className="mx-4 mb-4">
-          <Segment>
-            <div className="flex">
-              <div className="w-1/2">
-                <Label as="a" color="orange" size="tiny" tag>
-                  <div className="text-xs">Writing Articles</div>
-                </Label>
-
-                <div className="text-lg font-semibold my-2">
-                  I have a passion for writing about tech!
-                </div>
-                <List as="ul">
-                  <List.Item as="li">
-                    <div>
-                      You can read all about my articles in my medium profile.
-                    </div>
-                  </List.Item>
-                  <List.Item as="li">
-                    <div>https://medium.com/@jelorivera08</div>
-                  </List.Item>
-
-                  <List.Item as="li">
-                    <div>
-                      This is my way of giving back to the community. That is
-                      why I keep my content advanced yet beginner friendly.
-                    </div>
-                  </List.Item>
-                </List>
-              </div>
-
             </div>
           </Segment>
         </div>
